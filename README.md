@@ -14,11 +14,13 @@ Organisations are slow moving when it comes to making data platform bets; adopti
 
 ## Run demo
 
-To run on Windows, in a terminal, run `build.ps1`. You will need to have the .NET 8.0 SDK installed, and the "Desktop development with C++" workload installed in Visual Studio.
+**To run on Windows**, in a terminal, run `build.ps1`. You will need to have the .NET 8.0 SDK installed, and the "Desktop development with C++" workload installed in Visual Studio. The build script will create a `win-x64` library.
 
-To run on Linux, open the devcontainer in VS Code and run `build.ps1`
+**To run on Linux**, open the devcontainer in VS Code and run `build.ps1`. The build script will create a `linux-x64` library.
 
 ## Experiments
+
+This proof of concept contains a series of experiments to see what is possible:
 
 - [x] Can we call a .NET AOT compiled dll from Python? (use [ctypes](https://docs.python.org/3/library/ctypes.html))
 - [x] Can we pass in integer, perform a operation and return an integer?
