@@ -39,8 +39,8 @@ There are a number of other efforts to enable .NET and Python interoperability:
 - [IronPython](https://ironpython.net/) - focused on DLR & managed execution
 - [Python.NET](https://pythonnet.github.io/) - focused on CPython
 
-But both require the .NET runtime to be installed in the execution environment. These are not viable options for managed Spark Cluster environments, such as Azure Synapse Analytics, or Microsoft Fabric, where the cluster images are managed by the cloud provider, and LTS versions of .NET and Bring Your Own Runtime customisation is not supported (i.e. the model offered by GitHub Actions / Azure Pipelines).
+But both require the .NET runtime to be installed in the execution environment. These are not viable options for managed Spark Cluster environments, such as Azure Synapse Analytics, or Microsoft Fabric, where the cluster images are managed by the cloud provider, and LTS versions of .NET and Bring Your Own Runtime customisations (i.e. the model offered by GitHub Actions / Azure Pipelines) are not supported.
 
 The ability to call .NET AOT from Python depends on the `UnmanagedCallersOnlyAttribute` Class, which comes with a number of [restrictions](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.unmanagedcallersonlyattribute?view=net-8.0#remarks).
 
-If the ability to use .NET investments from Python is 
+If the ability to use .NET investments from Python is seen as something worthy of investment, improving the interop experience would be a great place to start. How can interop be improved? Can we use Source Generators to create idiomatic interop wrappers over .NET libraries (i.e. automatically convert from PascalCase to snake_case)? Could this source generated interop layer make calling a .NET library method from Python as simple as calling a Python method from Python - not having to marshal C type or use pointers to memory structures?
