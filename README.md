@@ -14,7 +14,7 @@ Organisations are slow moving when it comes to making data platform bets; adopti
 
 ## Run demo
 
-**To run on Windows**, in a terminal, run `build.ps1`. You will need to have the .NET 8.0 SDK installed, and the "Desktop development with C++" workload installed in Visual Studio. The build script will create a `win-x64` library.
+**To run on Windows**, in a terminal, run `build.ps1`. You will need to have the .NET 8.0 SDK installed, the "Desktop development with C++" workload installed in Visual Studio, and a Python distribution available on your PATH. The build script will create a `win-x64` library.
 
 **To run on Linux**, open the devcontainer in VS Code and run `build.ps1`. The build script will create a `linux-x64` library.
 
@@ -28,4 +28,6 @@ This proof of concept contains a series of experiments to see what is possible:
 - [ ] Can we do file operations?
 - [ ] Can we pass in an array?
 - [ ] Can we pass in a pandas dataframe?
-
+- [ ] Can we package in a `.whl` file?
+- [ ] Can we deploy the `.whl` file to Azure Synapse Analytics and run?
+- [ ] Can we deploy the `.whl` file to Microsoft Fabric and run?
