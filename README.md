@@ -20,10 +20,10 @@ To run on Linux, open the devcontainer in VS Code and run `build.ps1`
 
 ## Experiments
 
-[x] Can we call a .NET AOT compiled dll from Python? (use [ctypes](https://docs.python.org/3/library/ctypes.html))
-[x] Can we pass in integer, perform a operation and return an integer?
-[x] Can we pass in a string, and call a .NET library ([Spectre.Console](https://github.com/spectreconsole/spectre.console))
-[ ] Can we do file operations?
-[ ] Can we pass in an array?
-[ ] Can we pass in a pandas dataframe?
+- [x] Can we call a .NET AOT compiled dll from Python? (use [ctypes](https://docs.python.org/3/library/ctypes.html))
+- [x] Can we pass in integer, perform a operation and return an integer?
+- [x] Can we pass in a string, and call a .NET library ([Spectre.Console](https://github.com/spectreconsole/spectre.console))
+- [ ] Can we do file operations?
+- [ ] Can we pass in an array?
+- [ ] Can we pass in a pandas dataframe?
 
